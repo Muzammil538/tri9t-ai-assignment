@@ -13,6 +13,7 @@ tri9t-ai-assignment/
 │   │     versioning.py
 │   │     llm_service.py
 │   │     staleness.py
+|   |     ingestion.py
 │   │
 │   ├── models/
 │   │     document.py

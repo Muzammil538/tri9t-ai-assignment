@@ -41,6 +41,8 @@ class Node(Base):
 
     content = Column(Text)
     content_hash = Column(String)
+    
+    logical_key = Column(String, index=True)
 
     parent_id = Column(
         String,
