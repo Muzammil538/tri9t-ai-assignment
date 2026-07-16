@@ -1,12 +1,19 @@
 from fastapi import FastAPI
 
+from app.database import Base, engine
+
+from app.models import Document, Node
+
+
+Base.metadata.create_all(bind=engine)
+
 app = FastAPI(
-    title="CT-200 Document Parser",
-    version="1.0"
+    title="CT-200 Parser API"
 )
+
 
 @app.get("/")
 def home():
     return {
-        "message": "Tri9T AI Assignment API"
+        "message": "API Running"
     }
