@@ -44,7 +44,10 @@ def create_selection(
         node = db.query(Node).filter_by(id=node_id).first()
 
         if not node:
-            continue
+            raise HTTPException(
+                status_code=404,
+                detail=f"Node '{node_id}' not found"
+            )
 
         db.add(
             SelectionNode(

@@ -1,13 +1,12 @@
 from app.parser.pdf_parser import PDFParser
 
-parser = PDFParser("data/ct200_manual.pdf")
 
-nodes = parser.parse()
+def test_pdf_parser():
 
-for node in nodes:
-    print(
-        node["number"],
-        node["title"],
-        "Parent:",
-        node["parent"]
-    )
+    parser = PDFParser("data/ct200_manual.pdf")
+
+    nodes = parser.parse()
+
+    assert len(nodes) > 0
+
+    assert nodes[0]["title"] == "Device Overview"

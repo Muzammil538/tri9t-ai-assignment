@@ -1,0 +1,32 @@
+{
+    "selection_id": 2,
+    "version": 1,
+    "content_hashes": [],
+    "test_cases": [
+        {
+            "title": "Device Power-On Test",
+            "steps": "1. Connect the device to a power source. 2. Turn on the device. 3. Verify the device's display is active.",
+            "expected_result": "The device's display is active and showing the home screen."
+        },
+        {
+            "title": "Sensor Calibration Test",
+            "steps": "1. Initialize the sensor. 2. Input a known value. 3. Verify the sensor reading matches the input value.",
+            "expected_result": "The sensor reading matches the input value within an acceptable margin of error."
+        },
+        {
+            "title": "User Interface Navigation Test",
+            "steps": "1. Access the device's menu. 2. Navigate through each menu option. 3. Verify each option functions as expected.",
+            "expected_result": "Each menu option functions correctly and as expected."
+        },
+        {
+            "title": "Data Transmission Test",
+            "steps": "1. Configure the device to transmit data. 2. Send a test data packet. 3. Verify the data is received correctly by the intended recipient.",
+            "expected_result": "The data is transmitted and received correctly without errors or data loss."
+        },
+        {
+            "title": "Alarm and Alert Test",
+            "steps": "1. Trigger an alarm condition. 2. Verify the alarm is audible and visible. 3. Silence the alarm and verify it resets properly.",
+            "expected_result": "The alarm is audible and visible when triggered, and resets properly after being silenced."
+        }
+    ]
+}

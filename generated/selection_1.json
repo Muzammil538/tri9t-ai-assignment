@@ -1,0 +1,34 @@
+{
+    "selection_id": 1,
+    "version": 1,
+    "content_hashes": [
+        "e45461bf780a0e5e530c004ddf71d2a29ca56458bbba005f19e1b46203d14003"
+    ],
+    "test_cases": [
+        {
+            "title": "Valid Blood Pressure Reading",
+            "steps": "1. Turn on the device, 2. Place the cuff on the upper arm, 3. Press the start button, 4. Wait for the measurement to complete",
+            "expected_result": "The device displays a valid systolic, diastolic, and pulse rate reading within the normal range"
+        },
+        {
+            "title": "Multiple User Profiles",
+            "steps": "1. Create two user profiles, 2. Take a blood pressure reading for each profile, 3. Switch between profiles and verify readings",
+            "expected_result": "The device stores and displays readings for each user profile correctly, with up to 200 readings per profile"
+        },
+        {
+            "title": "Data Storage Capacity",
+            "steps": "1. Take 201 blood pressure readings for a single user profile, 2. Verify the oldest reading is deleted, 3. Check the device's memory",
+            "expected_result": "The device stores up to 200 readings and automatically deletes the oldest reading when the 201st reading is taken"
+        },
+        {
+            "title": "Error Handling - Incorrect Cuff Placement",
+            "steps": "1. Place the cuff incorrectly on the upper arm, 2. Press the start button, 3. Verify error message",
+            "expected_result": "The device displays an error message indicating incorrect cuff placement and does not take a reading"
+        },
+        {
+            "title": "Power-On Self-Test",
+            "steps": "1. Turn on the device, 2. Wait for the self-test to complete, 3. Verify all functions are operational",
+            "expected_result": "The device completes the self-test successfully and all functions are operational"
+        }
+    ]
+}

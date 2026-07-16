@@ -1,14 +1,17 @@
 from app.init_db import init_db
 from app.services.ingestion import IngestionService
 
-init_db()
 
-service = IngestionService()
+def test_ingestion():
 
-doc_id = service.ingest(
-    "data/ct200_manual.pdf",
-    "CT200",
-    1
-)
+    init_db()
 
-print("Document ID:", doc_id)
+    service = IngestionService()
+
+    document_id = service.ingest(
+        "data/ct200_manual.pdf",
+        "CT200",
+        1
+    )
+
+    assert document_id > 0

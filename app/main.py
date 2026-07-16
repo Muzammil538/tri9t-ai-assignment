@@ -4,6 +4,8 @@ from app.init_db import init_db
 
 from app.api.browse import router as browse_router
 from app.api.selection import router as selection_router
+from app.api.generation import router as generation_router
+from app.api.retrieval import router as retrieval_router
 
 # Initialize database
 init_db()
@@ -16,6 +18,8 @@ app = FastAPI(
 # Register routers
 app.include_router(browse_router)
 app.include_router(selection_router)
+app.include_router(generation_router)
+app.include_router(retrieval_router)
 
 
 @app.get("/")
