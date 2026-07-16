@@ -11,3 +11,8 @@ class NodeResponse(BaseModel):
 
     class Config:
         from_attributes = True
+        
+class SelectionCreate(BaseModel):
+    name: str
+    version: int
+    node_ids: list[str]

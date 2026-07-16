@@ -1,1 +1,6 @@
-from .document import Document, Node
+from .document import (
+    Document,
+    Node,
+    Selection,
+    SelectionNode
+)

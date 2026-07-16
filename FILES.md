@@ -9,6 +9,9 @@ tri9t-ai-assignment/
 │   ├── parser/
 │   │     pdf_parser.py
 │   │
+│   ├── llm/
+│   │     groq_client.py
+│   │
 │   ├── services/
 │   │     versioning.py
 │   │     llm_service.py
